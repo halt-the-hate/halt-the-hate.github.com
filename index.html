@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  </head>
+  <body>
+    <div class="row">
+    </div>
+    <div class="grid-x grid-padding-x">
+      <!-- logo + fields -->
+      <div class="large-3 medium-3 small-12 cell">
+      <div class="column header" >
+        <img src="img/amnesty-logo.jpg" width="200px"/>
+        <h1>Halt the Hate</h1>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link2</a></li>
+        </ul>
+      </div>
+      <div class="fields">
+          <fieldset>
+              <h2>hatecrime reason:</h2>
+              <input id="cow" class="checkbox" type="checkbox" value="cow"><label for="cow">cow</label>
+              <input id="caste" class="checkbox" type="checkbox" value="caste"><label for="caste">caste</label>
+              <input id="religion" class="checkbox" type="checkbox" value="religion"><label for="religion">religion</label>
+          </fieldset>
+          <fieldset>
+              <h2>identity:</h2>
+              <input id="muslim" class="checkbox" type="checkbox" value="muslim"><label for="muslim"> muslim</label>
+              <input id="dalit" class="checkbox" type="checkbox" value="dalit"><label for="dalit">dalit</label>
+          </fieldset>
+        <fieldset>
+          <h2>years:</h2>
+          <input id="year2015" class="years" type="checkbox" value="2015"><label for="year2015">2015</label>
+          <input id="year2016" class="years" type="checkbox" value="2016"><label for="year2016">2016</label>
+          <input id="year2017" class="years" type="checkbox" value="2017"><label for="year2017">2017</label>
+        </fieldset>
+      </div>
+      </div>      
+      <!-- map -->
+      <div class="large-4 medium-4 small-12 cell text-center">
+          <svg class="violence"></svg>
+      </div>
+      <!-- desc -->
+      <div class="large-3 medium-3 small-12 row desc">
+        <div class="column">
+            <p class="summary"></p>
+        </div>
+      </div>      
+    </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script type="text/javascript" src="js/india.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
